@@ -1,4 +1,4 @@
-Project Overview
+# Project Overview
 
 This project demonstrates the end-to-end workflow of provisioning cloud infrastructure on Amazon Web Services (AWS) using Terraform. It introduces the practical implementation of Infrastructure as Code (IaC) principles by automating the deployment, management, verification, and destruction of cloud resources through declarative configuration files.
 
@@ -6,11 +6,11 @@ The project focuses on building a foundational Terraform workflow that aligns wi
 
 Infrastructure Deployment Workflow
 
-Step 1: Create the Terraform Project Structure
+**Step 1:** Create the Terraform Project Structure
 
 Begin by creating a dedicated project directory for your Terraform configurations. Inside the project directory, create a primary Terraform configuration file named main.tf.
 
-This file serves as the entry point for defining:
+**This file serves as the entry point for defining:**
 
 Cloud providers
 Infrastructure resources
@@ -32,24 +32,24 @@ resource "aws_instance" "example" {
 Technical Breakdown
 Provider Block
 
-The provider block specifies the cloud platform Terraform will interact with.
+**The provider block specifies the cloud platform Terraform will interact with.**
 
 provider "aws" {
   region = "us-east-1"
 }
 
-This configuration:
+**This configuration:**
 
 Authenticates Terraform with AWS
 Defines the AWS region for resource deployment
 Downloads the required AWS provider plugins
 Resource Block
 
-The resource block defines the infrastructure component Terraform should create.
+**The resource block defines the infrastructure component Terraform should create.**
 
 resource "aws_instance" "example."
 
-This configuration:
+**This configuration:**
 
 Creates an Amazon EC2 virtual machine
 Uses a specified Amazon Machine Image (AMI)
@@ -60,7 +60,7 @@ ami	Defines the operating system image used for the EC2 instance
 instance_type	Specifies the compute size and hardware configuration
 aws_instance	Terraform resource type for EC2 instances
 Example	Logical resource name used internally by Terraform
-Step 2: Initialize the Terraform Working Directory
+**Step 2:** Initialize the Terraform Working Directory
 
 Navigate to the project directory and initialize Terraform:
 
@@ -82,12 +82,12 @@ Step 3: Validate and Review the Execution Plan
 
 Before deploying infrastructure, Terraform generates an execution plan to preview pending changes.
 
-Run:
+**Run:**
 
 terraform plan
 Purpose of Terraform plan
 
-This command:
+**This command:**
 
 Compares the desired infrastructure with the current infrastructure state
 Identifies resources to create, modify, or destroy
@@ -100,7 +100,7 @@ Reduced configuration errors
 Predictable infrastructure provisioning
 Step 4: Apply the Terraform Configuration
 
-Deploy the infrastructure using:
+**Deploy the infrastructure using:**
 
 terraform apply
 
@@ -122,17 +122,18 @@ Generate infrastructure metadata
 Store infrastructure state in the Terraform state file
 Infrastructure State Tracking
 
-Terraform automatically creates:
+**Terraform automatically creates:**
 
 terraform.tfstate
 
-This file tracks:
+**This file tracks:**
 
 Resource IDs
 Current infrastructure state
 Resource dependencies
 Configuration mappings
-Step 5: Verify Provisioned Resources
+
+**Step 5: Verify Provisioned Resources**
 
 After deployment, validate the infrastructure using:
 
@@ -143,7 +144,7 @@ Example AWS CLI Verification
 aws ec2 describe-instances
 Verification Objectives
 
-Ensure:
+**Ensure:**
 The 
 EC2 instance is running
 The correct instance type is deployed
@@ -151,7 +152,7 @@ The proper AWS region is used
 Tags and metadata are applied correctly
 Step 6: Destroy Infrastructure Resources
 
-To avoid unnecessary cloud costs, remove deployed infrastructure when no longer needed.
+**To avoid unnecessary cloud costs, remove deployed infrastructure when no longer needed.**
 
 Run:
 
@@ -162,13 +163,14 @@ Terraform will:
 Generate a destruction plan
 Request confirmation
 Safely terminate managed resources
-Important Note
+
+**Important Note**
 
 terraform destroy permanently deletes infrastructure resources defined in the Terraform configuration.
 
 Always review the destruction plan carefully before approval.
 
-Terraform Workflow Summary
+**Terraform Workflow Summary**
 Command	Purpose
 terraform init	Initialize Terraform environment
 terraform plan	Preview infrastructure changes
@@ -191,4 +193,4 @@ Cloud Environment Deployment Automation
 
 Author
 
-Olaoluwa Bamidele
+**Olaoluwa Bamidele**
