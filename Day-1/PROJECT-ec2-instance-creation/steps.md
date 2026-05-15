@@ -1,4 +1,3 @@
-Deploying AWS Infrastructure with Terraform: A Practical Infrastructure as Code (IaC) Workflow
 Project Overview
 
 This project demonstrates the end-to-end workflow of provisioning cloud infrastructure on Amazon Web Services (AWS) using Terraform. It introduces the practical implementation of Infrastructure as Code (IaC) principles by automating the deployment, management, verification, and destruction of cloud resources through declarative configuration files.
