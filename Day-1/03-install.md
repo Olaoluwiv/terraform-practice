@@ -1,5 +1,5 @@
-#Install Terraform
-##Windows
+# Install Terraform
+## Windows
 Install Terraform from the Downloads [Page](https://developer.hashicorp.com/terraform/downloads)
 
 (or)
@@ -11,8 +11,8 @@ Click on "your codespaces" as shown in the [Image](../Images/codespaces-location
 Codespaces will provide you with a virtual machine with Ubuntu and VS Code by default.
 Follow the steps provided in the Downloads Page for Linux.
 
-##Linux
+## Linux
 Follow the steps provided in the Downloads [Page](https://developer.hashicorp.com/terraform/downloads) for Linux.
 
-##macOS
+## macOS
 Follow the steps provided in the Downloads [Page](https://developer.hashicorp.com/terraform/downloads) for macOS.
