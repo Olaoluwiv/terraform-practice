@@ -1,4 +1,5 @@
-# Getting Started
+![Getting Started](https://shields.io)
+
 To get started with Terraform, it's important to understand some key terminology and concepts. Here are some fundamental terms and explanations.
 
 **Provider:** A provider is a plugin for Terraform that defines and manages resources for a specific cloud or infrastructure platform. Examples of providers include AWS, Azure, Google Cloud, and many others. You configure providers in your Terraform code to interact with the desired infrastructure platform.
