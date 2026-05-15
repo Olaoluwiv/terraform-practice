@@ -5,6 +5,7 @@ This project demonstrates the end-to-end workflow of provisioning cloud infrastr
 The project focuses on building a foundational Terraform workflow that aligns with modern Cloud Engineering and DevOps best practices.
 
 Infrastructure Deployment Workflow
+
 Step 1: Create the Terraform Project Structure
 
 Begin by creating a dedicated project directory for your Terraform configurations. Inside the project directory, create a primary Terraform configuration file named main.tf.
@@ -16,6 +17,7 @@ Infrastructure resources
 Variables
 Networking components
 Security configurations
+
 Example Terraform Configuration
 # Configure the AWS Provider
 provider "aws" {
@@ -45,7 +47,7 @@ Resource Block
 
 The resource block defines the infrastructure component Terraform should create.
 
-resource "aws_instance" "example"
+resource "aws_instance" "example."
 
 This configuration:
 
@@ -57,13 +59,13 @@ Parameter	Description
 ami	Defines the operating system image used for the EC2 instance
 instance_type	Specifies the compute size and hardware configuration
 aws_instance	Terraform resource type for EC2 instances
-example	Logical resource name used internally by Terraform
+Example	Logical resource name used internally by Terraform
 Step 2: Initialize the Terraform Working Directory
 
 Navigate to the project directory and initialize Terraform:
 
 terraform init
-What terraform init Does
+What Terraform init Does
 
 This command:
 
@@ -83,11 +85,11 @@ Before deploying infrastructure, Terraform generates an execution plan to previe
 Run:
 
 terraform plan
-Purpose of terraform plan
+Purpose of Terraform plan
 
 This command:
 
-Compares desired infrastructure with current infrastructure state
+Compares the desired infrastructure with the current infrastructure state
 Identifies resources to create, modify, or destroy
 Prevents accidental infrastructure changes
 Provides infrastructure change visibility before deployment
@@ -142,10 +144,10 @@ aws ec2 describe-instances
 Verification Objectives
 
 Ensure:
-
+The 
 EC2 instance is running
-Correct instance type is deployed
-Proper AWS region is used
+The correct instance type is deployed
+The proper AWS region is used
 Tags and metadata are applied correctly
 Step 6: Destroy Infrastructure Resources
 
@@ -186,6 +188,7 @@ Terraform State Management
 Infrastructure Lifecycle Management
 DevOps Workflow Fundamentals
 Cloud Environment Deployment Automation
+
 Author
 
 Olaoluwa Bamidele
