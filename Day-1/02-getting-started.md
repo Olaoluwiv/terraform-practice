@@ -26,4 +26,8 @@ To get started with Terraform, it's important to understand some key terminology
 
 These are some of the essential terms you'll encounter when working with Terraform. As you start using Terraform for your infrastructure provisioning and management, you'll become more familiar with these concepts and how they fit together in your IaC workflows.
 
+## Author
+**Olaoluwa Ayidina**
+
+
 
