@@ -16,3 +16,6 @@ Follow the steps provided in the Downloads [Page](https://developer.hashicorp.co
 
 ## macOS
 Follow the steps provided in the Downloads [Page](https://developer.hashicorp.com/terraform/downloads) for macOS.
+
+## Author
+**Olaoluwa Ayidina**
