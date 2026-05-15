@@ -27,4 +27,7 @@ aws configure
  ~~~
 It will prompt you to enter your AWS Access Key ID, Secret Access Key, default region, and default output format. Enter the credentials you obtained in the previous step.
 
+## Author
+**Olaoluwa Ayidina**
+
 
