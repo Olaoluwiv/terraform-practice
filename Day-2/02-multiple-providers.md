@@ -1,9 +1,10 @@
-Multiple Providers
+# Multiple Providers
 You can use multiple providers in one single terraform project. For example,
 
 Create a providers.tf file in the root directory of your Terraform project.
 In the providers.tf file, define the AWS and Azure providers. For example:
-provider "aws" {
+```hcl
+ provider "aws" {
   region = "us-east-1"
 }
 
