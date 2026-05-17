@@ -1,5 +1,5 @@
-Provider
-erraform is an open-source Infrastructure as Code (IaC) tool developed by HashiCorp that enables cloud engineers, DevOps engineers, and infrastructure teams to provision, manage, automate, and scale infrastructure using declarative configuration files. Instead of manually configuring servers, networking, storage, and security components through graphical user interfaces, Terraform allows infrastructure to be defined as code, making deployments faster, consistent, reusable, and version-controlled.
+## Provider
+terraform provider is an open-source Infrastructure as Code (IaC) tool developed by HashiCorp that enables cloud engineers, DevOps engineers, and infrastructure teams to provision, manage, automate, and scale infrastructure using declarative configuration files. Instead of manually configuring servers, networking, storage, and security components through graphical user interfaces, Terraform allows infrastructure to be defined as code, making deployments faster, consistent, reusable, and version-controlled.
 
 Infrastructure as Code represents a modern approach to infrastructure management where infrastructure resources are treated similarly to application code. With IaC, engineers can automate infrastructure deployment, reduce manual configuration errors, standardize environments, improve scalability, and support DevOps practices such as Continuous Integration and Continuous Deployment (CI/CD).
 
@@ -11,7 +11,7 @@ Terraform works through provider plugins. A provider is a plugin that enables Te
 
 The AWS provider, for example, enables Terraform to provision and manage AWS services such as EC2 instances, VPCs, S3 buckets, RDS databases, IAM roles, Load Balancers, Lambda functions, and Kubernetes clusters. Other providers allow Terraform to interact with platforms such as Microsoft Azure, Google Cloud Platform, Docker, Kubernetes, GitHub, Cloudflare, VMware, and many others.
 
-A basic AWS provider configuration is written as:
+**A basic AWS provider configuration is written as:**
 
 provider "aws" {
   region = "us-east-1"
@@ -21,7 +21,7 @@ This configuration tells Terraform to connect to AWS and deploy infrastructure r
 
 Terraform providers can be configured in different ways depending on the deployment environment, authentication requirements, and organizational security practices.
 
-The most common provider configuration methods include:
+**The most common provider configuration methods include:**
 
 Basic Region Configuration
 provider "aws" {
@@ -58,7 +58,7 @@ export AWS_SECRET_ACCESS_KEY="your_secret_key"
 
 This approach is widely used in CI/CD pipelines and enterprise DevOps environments because it improves credential security.
 
-IAM Role-Based Configuration
+**IAM Role-Based Configuration**
 
 Terraform can automatically use IAM roles attached to AWS EC2 instances, ECS tasks, Lambda functions, or CI/CD runners. This is considered one of the most secure authentication methods because temporary credentials are generated dynamically without exposing secret keys.
 
@@ -111,52 +111,52 @@ resource "aws_instance" "web_server" {
 
 In this configuration, Terraform provisions an EC2 instance using the specified AMI and instance type while applying resource tags for management and identification.
 
-Terraform uses several important commands throughout the infrastructure lifecycle. The terraform init command initializes the working directory and downloads provider plugins. The terraform plan command previews infrastructure changes before deployment. The terraform apply command provisions or updates infrastructure resources. The terraform destroy command removes infrastructure resources managed by Terraform.
+Terraform uses several important commands throughout the infrastructure lifecycle. The terraform init command initializes the working directory and downloads provider plugins. The Terraform plan command previews infrastructure changes before deployment. The terraform apply command provisions or updates infrastructure resources. The Terraform destroy command removes infrastructure resources managed by Terraform.
 
 Terraform maintains infrastructure state using a state file called terraform.tfstate. This state file tracks deployed resources, infrastructure dependencies, resource IDs, and current infrastructure configuration. State management is one of Terraform’s most important features because it enables Terraform to compare the desired infrastructure state with the actual deployed state and apply changes safely.
 
 Terraform also supports modules. Modules are reusable collections of Terraform configurations that simplify infrastructure standardization and reuse. Instead of rewriting infrastructure code repeatedly, engineers create reusable modules for components such as VPCs, EC2 instances, security groups, databases, and Kubernetes clusters.
 
-Terraform modules can be:
+**Terraform modules can be:**
 
-Local modules
-Remote Git modules
-Terraform Registry modules
-Private enterprise modules
+* Local modules
+* Remote Git modules
+* Terraform Registry modules
+* Private enterprise modules
 
 Modules improve:
 
-Code reusability
-Infrastructure consistency
-Team collaboration
-Deployment scalability
-Infrastructure standardization
+* Code reusability
+* Infrastructure consistency
+* Team collaboration
+* Deployment scalability
+* Infrastructure standardization
 
-Terraform integrates with many modern DevOps and cloud-native technologies including:
+**Terraform integrates with many modern DevOps and cloud-native technologies, including:**
 
-Kubernetes
-Docker
-Jenkins
-GitHub Actions
-GitLab CI/CD
-Ansible
-Helm
-Prometheus
-Datadog
+* Kubernetes
+* Docker
+* Jenkins
+* GitHub Actions
+* GitLab CI/CD
+* Ansible
+8 Helm
+* Prometheus
+* Datadog
 
 This makes Terraform a critical technology in Cloud Engineering, Platform Engineering, Site Reliability Engineering (SRE), and DevOps automation workflows.
 
-Terraform is widely used in real-world enterprise environments for:
+**Terraform is widely used in real-world enterprise environments for:**
 
-Infrastructure provisioning
-Multi-cloud deployment
-Kubernetes cluster deployment
-CI/CD infrastructure automation
-Disaster recovery environments
-Auto-scaling cloud architecture
-Infrastructure standardization
-Security automation
-Cloud migration projects
+* Infrastructure provisioning
+* Multi-cloud deployment
+* Kubernetes cluster deployment
+* CI/CD infrastructure automation
+* Disaster recovery environments
+* Auto-scaling cloud architecture
+* Infrastructure standardization
+* Security automation
+* Cloud migration projects
 
 A professional Terraform project structure usually includes:
 
@@ -174,15 +174,16 @@ Terraform projects should always include a .gitignore file to prevent sensitive 
 
 Example:
 
-.terraform/
-*.tfstate
-*.tfstate.*
-*.tfvars
+* .terraform/
+* .tfstate
+* .tfstate.*
+* .tfvars
 
 Terraform has become one of the most important Infrastructure as Code technologies in modern cloud environments because it enables organizations to automate infrastructure deployment, improve operational efficiency, standardize cloud environments, reduce manual errors, and support scalable cloud-native architectures.
 
 Understanding Terraform fundamentals, provider configuration, state management, modules, infrastructure lifecycle management, and cloud automation workflows is therefore an essential skill for Cloud Engineers, DevOps Engineers, Infrastructure Engineers, and Platform Engineers working in modern enterprise cloud environments.
 
-Author
+**Author**
+**Olaoluwa Ayidina**
 
 Olaoluwa Bamidele
