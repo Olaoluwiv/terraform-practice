@@ -24,7 +24,7 @@ Terraform providers can be configured in different ways depending on the deploym
 **The most common provider configuration methods include:**
 
 Basic Region Configuration
-```
+```hcl
 provider "aws" {
   region = "us-east-1"
 }
@@ -32,7 +32,7 @@ provider "aws" {
 This method specifies only the AWS region and relies on existing AWS credentials configured on the system.
 
 AWS CLI Profile Configuration
-```
+```hcl
 provider "aws" {
   region  = "us-east-1"
   profile = "default"
@@ -41,7 +41,7 @@ provider "aws" {
 This configuration uses AWS CLI named profiles stored locally on the machine.
 
 Access Key and Secret Key Configuration
-```
+```hcl
 provider "aws" {
   region     = "us-east-1"
   access_key = "YOUR_ACCESS_KEY"
@@ -55,7 +55,7 @@ Environment Variable Configuration
 Terraform automatically detects AWS credentials stored as environment variables.
 
 Example:
-```
+```hcl
 export AWS_ACCESS_KEY_ID="your_access_key"
 export AWS_SECRET_ACCESS_KEY="your_secret_key"
 ```
@@ -70,7 +70,7 @@ Multiple Provider Configuration with Aliases
 Terraform supports multiple provider configurations within the same project using aliases.
 
 Example:
-```
+```hcl
 provider "aws" {
   region = "us-east-1"
 }
@@ -85,7 +85,7 @@ This approach allows infrastructure deployment across multiple AWS regions or ac
 Terraform also supports provider version management. In professional environments, engineers pin provider versions to maintain deployment consistency and prevent unexpected breaking changes caused by provider upgrades.
 
 Example:
-```
+```hcl
 terraform {
   required_providers {
     aws = {
@@ -98,7 +98,7 @@ terraform {
 Terraform uses HashiCorp Configuration Language (HCL), which is a human-readable declarative language specifically designed for infrastructure automation. HCL makes Terraform configurations easier to understand, maintain, and collaborate on.
 
 A simple EC2 deployment example is shown below:
-```
+```hcl
 provider "aws" {
   region = "us-east-1"
 }
@@ -162,7 +162,7 @@ This makes Terraform a critical technology in Cloud Engineering, Platform Engine
 * Cloud migration projects
 
 A professional Terraform project structure usually includes:
-```
+```hcl
 terraform-project/
 ├── provider.tf
 ├── main.tf
@@ -176,7 +176,7 @@ terraform-project/
 Terraform projects should always include a .gitignore file to prevent sensitive or generated files from being pushed to GitHub.
 
 Example:
-```
+```hcl
 * .terraform/
 * .tfstate
 * .tfstate.*
