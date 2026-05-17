@@ -13,7 +13,7 @@ b. Navigate to the IAM service.
 
 c. Click on "Users" in the left navigation pane and then click "Add user."
 
-Choose a username, select "Programmatic access" as the access type, and click "Next: Permissions."
+**Choose a username, select "Programmatic access" as the access type, and click**  "Next: Permissions."
 
 Attach policies to this user based on your requirements. At a minimum, you should attach the "AmazonEC2FullAccess" policy for basic EC2 operations. If you need access to other AWS services, attach the relevant policies accordingly.
 
@@ -26,5 +26,8 @@ Use the AWS CLI to configure your credentials. Open a terminal and run:
 aws configure
  ~~~
 It will prompt you to enter your AWS Access Key ID, Secret Access Key, default region, and default output format. Enter the credentials you obtained in the previous step.
+
+## Author
+**Olaoluwa Ayidina**
 
 
