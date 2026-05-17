@@ -1,5 +1,5 @@
 # Modern Infrastructure Automation with Terraform: Foundations of Infrastructure as Code (IaC)
-Overview
+## Overview
 
 Infrastructure as Code (IaC) is a foundational practice in modern Cloud Engineering and DevOps that enables organizations to provision, configure, and manage infrastructure using machine-readable code rather than manual processes.
 

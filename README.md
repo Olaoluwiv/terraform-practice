@@ -1,99 +1,69 @@
-Terraform Fundamentals: Introduction to Infrastructure as Code (IaC)
-Project Overview
+
+# DAY 1: Introduction to Infrastructure as Code (IaC)
+## Project Overview
 
 This project introduces the foundational concepts of Terraform and Infrastructure as Code (IaC). It demonstrates how Terraform enables cloud engineers and DevOps teams to automate infrastructure provisioning, improve consistency, and manage scalable cloud environments efficiently.
 
 The project also provides hands-on experience with deploying AWS infrastructure using Terraform and understanding the core Terraform workflow.
 
-Learning Objectives
+**Learning Objectives**
 
 By completing this project, you will:
 
-Understand the principles of Infrastructure as Code (IaC)
-Learn how Terraform automates infrastructure provisioning
-Configure Terraform for AWS environments
-Write reusable Terraform configurations using HCL
-Understand the Terraform lifecycle and workflow
-Provision AWS EC2 instances using Terraform
-Learn the fundamentals of Terraform state management
-Topics Covered
-Introduction to Terraform and Infrastructure as Code (IaC)
+* Understand the principles of Infrastructure as Code (IaC)
+* Learn how Terraform automates infrastructure provisioning
+ *Configure Terraform for AWS environments
+ *Write reusable Terraform configurations using HCL
+ *Understand the Terraform lifecycle and workflow
+* Provision AWS EC2 instances using Terraform
+* Learn the fundamentals of Terraform state management
 
-Explore the core concepts of Terraform and IaC, including the advantages of automation, infrastructure consistency, scalability, and version-controlled infrastructure management in modern cloud environments.
+## Installing Terraform on Windows, macOS, and Linux
+* [macos](https://releases.hashicorp.com/terraform/1.15.3/terraform_1.15.3_darwin_amd64.zip)
+* [window](https://releases.hashicorp.com/terraform/1.15.3/terraform_1.15.3_windows_386.zip)
+* [Linux](https://developer.hashicorp.com/terraform/install#linux)
 
-Installing Terraform on Windows, macOS, and Linux
+**Learn how to integrate Terraform with Amazon Web Services (AWS) by:**
 
-Gain hands-on experience installing Terraform across multiple operating systems, including:
+* Configuring AWS credentials
+* Setting up the AWS provider
+* Preparing a secure Terraform working environment
+* Authenticating Terraform with AWS services
+* Writing Your First Terraform Configuration
 
-Windows
-macOS
-Linux
+**Build your first Terraform configuration using HashiCorp Configuration Language (HCL). by using**
 
-This section includes environment setup and installation verification steps.
+* Terraform file structure
+* Resource blocks
+* Provider configuration
+* Infrastructure definitions
+* Writing clean and reusable Terraform code
+* Understanding the Terraform Lifecycle
 
-Configuring Terraform for AWS
+**Develop a solid understanding of the Terraform workflow and lifecycle, including:**
 
-Learn how to integrate Terraform with Amazon Web Services (AWS) by:
+* terraform init
+* terraform plan
+* terraform apply
 
-Configuring AWS credentials
-Setting up the AWS provider
-Preparing a secure Terraform working environment
-Authenticating Terraform with AWS services
-Writing Your First Terraform Configuration
+**Deploy an Amazon EC2 instance on AWS using Terraform while configuring:**
+* Amazon Machine Image (AMI)
+* Instance type
+* Security configurations
+* Resource tags and metadata
 
-Build your first Terraform configuration using HashiCorp Configuration Language (HCL).
+# Day 2: Advanced Terraform Configuration
+## Understanding Providers and Resources
+Deepen your knowledge of providers and resources. Explore the role of different providers for various cloud platforms and understand how resources define infrastructure components.
 
-Topics include:
+## Variables and Outputs in Terraform
+Discover the power of variables for dynamic configurations. Learn how to define, declare, and utilize variables effectively. Explore outputs to retrieve and display essential information.
 
-Terraform file structure
-Resource blocks
-Provider configuration
-Infrastructure definitions
-Writing clean and reusable Terraform code
-Understanding the Terraform Lifecycle
+## Conditional Expressions and Functions
+Elevate your configurations with conditional expressions, adding logic to your code. We'll introduce you to Terraform's built-in functions for tasks like string manipulation and calculations.
 
-Develop a solid understanding of the Terraform workflow and lifecycle, including:
+## Debugging and Formatting Terraform Files
+Master the art of debugging Terraform configurations.Plus, learn why proper formatting with terraform fmt is crucial.
+**Author**
 
-terraform init
-terraform plan
-terraform apply
-
-Learn how Terraform initializes providers, previews infrastructure changes, and deploys resources safely.
-
-Provisioning an EC2 Instance with Terraform
-
-Deploy an Amazon EC2 instance on AWS using Terraform while configuring:
-
-Amazon Machine Image (AMI)
-Instance type
-Security configurations
-Resource tags and metadata
-
-This section demonstrates real-world infrastructure provisioning using Infrastructure as Code principles.
-
-Terraform State Management Basics
-
-Understand the role of Terraform state management in maintaining infrastructure consistency.
-
-Topics include:
-
-Terraform state files
-Desired state vs current state
-Infrastructure tracking
-State synchronization
-Managing infrastructure changes effectively
-Technologies Used
-Terraform
-AWS EC2
-HashiCorp Configuration Language (HCL)
-Git & GitHub
-Skills Demonstrated
-Infrastructure as Code (IaC)
-Cloud Infrastructure Automation
-AWS Resource Provisioning
-Terraform Configuration Management
-Infrastructure Lifecycle Management
-Version Control with Git and GitHub
-Author
-
-Olaoluwa Ayidina
+**Olaoluwa Ayidina**
