@@ -14,7 +14,7 @@ They allow you to separate configuration values from your Terraform code, making
 **Collaboration:** When working in a team, each team member can have their own .tfvars file to set values specific to their environment or workflow. This avoids conflicts in the codebase when multiple people are working on the same Terraform project.
 
 **Summary**
-Here's how you typically use .tfvars files
+**Here's how you typically use .tfvars files**
 
 * Define your input variables in your Terraform code (e.g., in a variables.tf file).
 
