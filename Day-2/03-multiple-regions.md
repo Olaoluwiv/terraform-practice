@@ -1,6 +1,6 @@
 Multiple Region Implementation in Terraform
 You can make use of alias keyword to implement multi region infrastructure setup in terraform.
-
+```
 provider "aws" {
   alias = "us-east-1"
   region = "us-east-1"
@@ -23,3 +23,4 @@ resource "aws_instance" "example2" {
   provider = "aws.us-west-2"
 }
 
+```
