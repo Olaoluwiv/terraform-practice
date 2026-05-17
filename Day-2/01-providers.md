@@ -185,5 +185,3 @@ Understanding Terraform fundamentals, provider configuration, state management, 
 
 **Author**
 **Olaoluwa Ayidina**
-
-Olaoluwa Bamidele
