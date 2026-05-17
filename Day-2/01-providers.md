@@ -12,11 +12,11 @@ Terraform works through provider plugins. A provider is a plugin that enables Te
 The AWS provider, for example, enables Terraform to provision and manage AWS services such as EC2 instances, VPCs, S3 buckets, RDS databases, IAM roles, Load Balancers, Lambda functions, and Kubernetes clusters. Other providers allow Terraform to interact with platforms such as Microsoft Azure, Google Cloud Platform, Docker, Kubernetes, GitHub, Cloudflare, VMware, and many others.
 
 **A basic AWS provider configuration is written as:**
-
+```hcl
 provider "aws" {
   region = "us-east-1"
 }
-
+```
 This configuration tells Terraform to connect to AWS and deploy infrastructure resources into the us-east-1 region.
 
 Terraform providers can be configured in different ways depending on the deployment environment, authentication requirements, and organizational security practices.
@@ -24,27 +24,30 @@ Terraform providers can be configured in different ways depending on the deploym
 **The most common provider configuration methods include:**
 
 Basic Region Configuration
+```
 provider "aws" {
   region = "us-east-1"
 }
-
+```
 This method specifies only the AWS region and relies on existing AWS credentials configured on the system.
 
 AWS CLI Profile Configuration
+```
 provider "aws" {
   region  = "us-east-1"
   profile = "default"
 }
-
+```
 This configuration uses AWS CLI named profiles stored locally on the machine.
 
 Access Key and Secret Key Configuration
+```
 provider "aws" {
   region     = "us-east-1"
   access_key = "YOUR_ACCESS_KEY"
   secret_key = "YOUR_SECRET_KEY"
 }
-
+```
 This method directly provides credentials inside the provider block. Although supported, it is not recommended for production environments because hardcoding credentials can expose sensitive information.
 
 Environment Variable Configuration
@@ -52,10 +55,10 @@ Environment Variable Configuration
 Terraform automatically detects AWS credentials stored as environment variables.
 
 Example:
-
+```
 export AWS_ACCESS_KEY_ID="your_access_key"
 export AWS_SECRET_ACCESS_KEY="your_secret_key"
-
+```
 This approach is widely used in CI/CD pipelines and enterprise DevOps environments because it improves credential security.
 
 **IAM Role-Based Configuration**
@@ -67,7 +70,7 @@ Multiple Provider Configuration with Aliases
 Terraform supports multiple provider configurations within the same project using aliases.
 
 Example:
-
+```
 provider "aws" {
   region = "us-east-1"
 }
@@ -76,13 +79,13 @@ provider "aws" {
   alias  = "west"
   region = "us-west-2"
 }
-
+```
 This approach allows infrastructure deployment across multiple AWS regions or accounts.
 
 Terraform also supports provider version management. In professional environments, engineers pin provider versions to maintain deployment consistency and prevent unexpected breaking changes caused by provider upgrades.
 
 Example:
-
+```
 terraform {
   required_providers {
     aws = {
@@ -91,11 +94,11 @@ terraform {
     }
   }
 }
-
+```
 Terraform uses HashiCorp Configuration Language (HCL), which is a human-readable declarative language specifically designed for infrastructure automation. HCL makes Terraform configurations easier to understand, maintain, and collaborate on.
 
 A simple EC2 deployment example is shown below:
-
+```
 provider "aws" {
   region = "us-east-1"
 }
@@ -108,7 +111,7 @@ resource "aws_instance" "web_server" {
     Name = "Terraform-EC2"
   }
 }
-
+```
 In this configuration, Terraform provisions an EC2 instance using the specified AMI and instance type while applying resource tags for management and identification.
 
 Terraform uses several important commands throughout the infrastructure lifecycle. The terraform init command initializes the working directory and downloads provider plugins. The Terraform plan command previews infrastructure changes before deployment. The terraform apply command provisions or updates infrastructure resources. The Terraform destroy command removes infrastructure resources managed by Terraform.
@@ -159,7 +162,7 @@ This makes Terraform a critical technology in Cloud Engineering, Platform Engine
 * Cloud migration projects
 
 A professional Terraform project structure usually includes:
-
+```
 terraform-project/
 ├── provider.tf
 ├── main.tf
@@ -169,16 +172,16 @@ terraform-project/
 ├── modules/
 ├── .gitignore
 └── README.md
-
+```
 Terraform projects should always include a .gitignore file to prevent sensitive or generated files from being pushed to GitHub.
 
 Example:
-
+```
 * .terraform/
 * .tfstate
 * .tfstate.*
 * .tfvars
-
+```
 Terraform has become one of the most important Infrastructure as Code technologies in modern cloud environments because it enables organizations to automate infrastructure deployment, improve operational efficiency, standardize cloud environments, reduce manual errors, and support scalable cloud-native architectures.
 
 Understanding Terraform fundamentals, provider configuration, state management, modules, infrastructure lifecycle management, and cloud automation workflows is therefore an essential skill for Cloud Engineers, DevOps Engineers, Infrastructure Engineers, and Platform Engineers working in modern enterprise cloud environments.
