@@ -12,7 +12,7 @@ Terraform is an Infrastructure as Code (IaC) tool used to define and provision i
 
 4. **Resource Metadata**: The state file stores metadata about each resource, such as unique identifiers, which is crucial for managing resources and understanding their relationships.
 
-# Disadvantages of Storing Terraform State in Version Control Systems (VCS):
+## Disadvantages of Storing Terraform State in Version Control Systems (VCS):
 
 1. **Security Risks**: Sensitive information, such as API keys or passwords, may be stored in the state file if it's committed to a VCS. This poses a security risk because VCS repositories are often shared among team members.
 
