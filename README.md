@@ -97,6 +97,36 @@ Get hands-on experience configuring an S3 bucket as a backend for remote state s
 **State Locking with DynamoDB**
 Dive into state locking and the prevention of concurrent updates. Implement state locking using DynamoDB as a backend mechanism, ensuring state consistency.
 
+## Day 5: Provisioning and Provisioners
+# Understanding Provisioners in Terraform
+Learn about provisioners, mechanisms for executing actions on resources during creation and destruction. Understand how they facilitate customization.
+
+**Remote-exec and Local-exec Provisioners**
+Differentiate between remote-exec and local-exec provisioners. Explore how remote-exec provisions actions on remote servers, while local-exec performs tasks locally.
+
+**Applying Provisioners at Creation and Destruction**
+Discover when to use provisioners during resource creation or destruction. Configure provisioners within resource blocks to execute specific actions.
+
+**Failure Handling for Provisioners**
+Gain insights into handling provisioner failures. Learn about retry mechanisms, timeouts, and the on_failure attribute to control provisioner behavior on failure.
+
+## Day 6: Managing Environments with Workspaces
+# Introduction to Terraform Workspaces
+Understand the concept of workspaces and their role in managing different environments. Learn how workspaces aid in isolating configurations.
+
+**Creating and Switching Between Workspaces**
+Learn how to create new workspaces and switch between them using terraform workspace commands. Understand their significance in environment management.
+
+**Using Workspaces for Environment Management**
+Learn deeper into how workspaces streamline environment management. Comprehend their benefits in maintaining separate state files for various settings.
+
+## Day 7: Security and Advanced Topics
+# HashiCorp Vault Overview
+Gain an overview of HashiCorp Vault, a powerful tool for secret management and data protection. Understand its significance in maintaining secure configurations.
+
+**Integrating Terraform with Vault for Secrets**
+Learn how to integrate Terraform with Vault to manage sensitive data securely. Discover how Vault can be used to store and distribute secrets within configurations.
+
 **Author**
 
 **Olaoluwa Ayidina**
